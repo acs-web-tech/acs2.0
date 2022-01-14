@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    cursor:url("glowing_cursor.gif"),url("glowing_cursor.gif"), default;
+}
+.pre-container{
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index: 100;
+    background-color: rgb(235, 221, 221,0.567);
+    top:0;
+   display: none;
+    text-align: center;
+}
+.inner-loader{
+     top: 50%;
+    position: relative;
+   
+}
+.spin{
+    position: relative;
+    left: 46%;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: transparent;
+    box-shadow: 15px 0px 0 0 rgb(0, 238, 255), 35px 0px 0 0 rgb(0, 238, 255), 55px 0px 0 0 rgb(0, 238, 255);
+    animation: spin 1s infinite linear;
+  }
+  @keyframes spin {
+    100% {
+      box-shadow: 15px -10px 0 0 rgb(0, 238, 255), 35px 0px 0 0 rgb(0, 238, 255), 55px 0px 0 0 rgb(0, 238, 255);
+    }
+    50% {
+      box-shadow: 15px -10px 0 0 rgb(0, 238, 255), 35px -10px 0 0 rgb(0, 238, 255), 55px 0px 0 0 rgb(0, 238, 255);
+    }
+    10% {
+      box-shadow: 15px -10px 0 0 rgb(0, 238, 255), 35px -10px 0 0 rgb(0, 238, 255), 55px -10px 0 0 rgb(0, 238, 255);
+    }
+  }
+  
+body{
+    background: rgb(27,18,194);
+    background: linear-gradient(90deg, rgba(27,18,194,0.9612219887955182) 0%, rgba(0,125,255,0.9444152661064426) 100%);
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Serif Display', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Pushster', cursive;
+    color:#ffff;
+    font-size:2.3rem;
+   
+}
+
+
+.name__User,.date__end,.date__start,.team__pin,.reason__leave{
+    width:70%;
+    height:60%;
+   
+   margin-top:15%;
+   margin-left:20%;
+   display:none;
+  
+   
+}
+.name__User{
+    display:block ; 
+}
+.name__inp,.name__date{
+    display:block;
+    /* padding-top:100px;
+    padding-left:200px; */
+    width:100%;
+    height:70px;
+    background:transparent;
+    border-width:0px 0px 5px 0px;
+    outline:none;
+    font-size:2.3rem;
+    color:#ffff;
+    padding-top:26px;
+  
+}
+.btn__name,.btn__name__submit{
+   background:rgba(255,0,74,0.9444152661064426);
+   color:#fff;
+   border:none;
+   width: 100px;
+   height:50px;
+   border-radius:6%;
+   outline:none;
+   margin-left: 70%;
+   cursor:pointer;
+   
+   
+}
+.label__end,.label__start,.label__team__pin,.label__reason__leave{
+    width:100%;
+    
+}
+.end__note{
+  width:50%;
+}
+input[type="number"]::-webkit-inner-spin-button{
+  display:none;
+}
+.reason__leave__inp{
+    margin-top: 100px;
+}
+.prev__btn{
+    background:rgba(255,0,74,0.9444152661064426);
+    color:#fff;
+    border:none;
+    width: 100px;
+    height:50px;
+    border-radius:6%;   
+
+  
+    cursor:pointer;
+      
+}
+.left__btn,.right__btn{
+ 
+   
+    float:left;
+    /* display:inline-block; */
+}
