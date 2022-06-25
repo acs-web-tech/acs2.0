@@ -5,16 +5,16 @@ function validate(data={}){
        let regdate2 = new RegExp(/[\$\(\)\/\\\+\*\?\<\>\&\^%#@!A-Za-z]/img)
        
        if(data.name.match(regname)!=null){
-           console.log("err1")
+        
         return false
        }
        
        else if(data.dateofEnd.match(regdate)==null||data.dateofEnd.match(regdate2)!=null){
-        console.log("err2")
+        
         return false
        }
        else if(data.dataofstart.match(regdate)==null||data.dataofstart.match(regdate2)!=null){
-        console.log("err3")
+      
          return false
         }
         else if(data.teampin.match(/[A-Za-z]/igm)!=null){
@@ -22,7 +22,7 @@ function validate(data={}){
             return false
         }
         else if(data.reason.match(/[\$\(\)\/\\\+\*\?\<\>\&\^%#@!_~\{\}]/igm)!=null){
-            console.log("err5")
+            
             return false
         }
         else{
